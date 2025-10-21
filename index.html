@@ -62,13 +62,15 @@
       </div>
         <div class="avatar-card">
           <img
-            src="images/profile.jpg"
-            alt="Profile photo of Aphinan Ngamphoncharoen"
-            class="avatar"
-            width="320"
-            height="320"
-            loading="lazy"
-            decoding="async"
+          src="images/profile.jpg"
+          srcset="images/profile-320.jpg 320w, images/profile-480.jpg 480w, images/profile-720.jpg 720w"
+          sizes="(max-width: 820px) 60vw, 320px"
+          alt="Profile photo of Aphinan Ngamphoncharoen"
+          class="avatar"
+          width="320"
+          height="320"
+          loading="lazy"
+          decoding="async"
           />
         </div>
     </div>
@@ -318,6 +320,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
