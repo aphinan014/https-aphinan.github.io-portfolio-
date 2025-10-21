@@ -147,3 +147,4 @@ footer{padding:40px 0 60px; color:var(--muted)}
 
 @media (prefers-reduced-motion: reduce){
   *{animation:none !important; transition:none !important}
+}
