@@ -45,4 +45,18 @@ document.querySelectorAll('.reveal, .card').forEach(el => io.observe(el));
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Mobile nav toggle
+const nav = document.querySelector('nav.menu');
+const navToggle = document.getElementById('navToggle');
+navToggle?.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', String(isOpen));
+
+  nav?.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
 
