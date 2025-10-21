@@ -42,3 +42,12 @@ document.querySelectorAll('.reveal, .card').forEach(el => io.observe(el));
 
 // Year
 document.getElementById('year').textContent = new Date().getFullYear();
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+
+menuToggle?.addEventListener('click', () => {
+  const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+  menuToggle.setAttribute('aria-expanded', String(!expanded));
+  menuToggle.classList.toggle('active');
+  navMenu.classList.toggle('show');
+});
