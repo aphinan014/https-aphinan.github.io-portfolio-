@@ -49,15 +49,16 @@
 </header>
   <!-- HERO -->
   <section class="hero">
-    <div class="glow" aria-hidden="true"></div>
     <div class="container wrap">
       <div>
-        <div class="badge"><span class="dot"></span> Junior Web Developer | Frontend Developer</div>
+        <div class="badge">
+          <span class="dot"></span> Junior Web Developer | Frontend Developer
+        </div>
         <h1 class="title">
           <span class="gradient">Turning ideas</span> into responsive, accessible, and fast websites.
         </h1>
         <p class="subtitle">
-          Bilingual portfolio (TH/EN) with developer-focused resume, technical skills, demo projects, and creative works.
+          ผมชื่อ นาย อภินันท์ งามผลเจริญ (อั๋น) เป็น Junior Web Developer ที่ถนัด HTML, CSS และ JavaScript กำลังพัฒนาทักษะ React และ Node.js
         </p>
         <div class="cta">
           <a class="btn" href="#resume">Resume</a>
@@ -65,23 +66,55 @@
         </div>
       </div>
       <div class="avatar-card">
-        <div class="avatar-wrapper">
-          <img
-            src="images/Profile2.jpg"
-            alt="Profile photo of Aphinan Ngamphoncharoen"
-            class="avatar"
-            width="320"
-            height="320"
-            loading="lazy"
-            decoding="async"
-          />
-          <span class="avatar-label">Say Hello</span>
-        </div>
+        <img src="images/profile2.jpg" alt="Profile photo" class="avatar">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="head">
+        <h2 class="h2">About Me</h2>
+        <p class="desc">อยากจะพัฒนาฝีมือเป็น Developer อย่างเต็มตัว</p>
+      </div>
+      <p>
+        ผมจบการศึกษาสาขาเทคโนโลยีสารสนเทศและการสื่อสารเพื่อการตลาด 
+        มีพื้นฐานด้านการพัฒนาเว็บไซต์ และประสบการณ์ด้านการตลาดดิจิทัลกับการออกแบบกราฟิก
+        ซึ่งช่วยเสริมความเข้าใจเรื่อง UX/UI และการทำงานร่วมกับทีม
+      </p>
+    </div>
+  </section>
+
+   <!-- Skills / Tech Stack -->
+  <section id="skills">
+    <div class="container">
+      <div class="head">
+        <h2 class="h2">Skills & Tech Stack</h2>
+        <p class="desc">สิ่งที่ผมใช้ทำงานและกำลังเรียนรู้</p>
+      </div>
+      <div class="tech-grid grid">
+        <div class="skillcard">HTML5</div>
+        <div class="skillcard">CSS3</div>
+        <div class="skillcard">JavaScript</div>
+        <div class="skillcard">React (Learning)</div>
+        <div class="skillcard">Node.js (Learning)</div>
+        <div class="skillcard">Figma / UX</div>
       </div>
     </div>
   </section>
 
   <!-- RESUME -->
+
+    <section id="resume">
+    <div class="container">
+      <div class="head">
+      <a href="resume.pdf" class="btn">Download Resume</a>
+      </div>
+      <p class="desc">ดาวน์โหลดเรซูเม่ หรือดูได้ในหน้านี้</p>
+    </div>
+  </section>
+
   <section id="resume" class="resume">
     <div class="container">
       <div class="head">
@@ -215,22 +248,32 @@
   <section id="projects" class="projects">
     <div class="container">
       <div class="head">
-        <h2 class="h2">Projects (Demo Slots)</h2>
-        <p class="desc">Start simple, iterate fast — fill these with real links later.</p>
+        <h2 class="h2">Projects</h2>
+        <p class="desc">ผลงานจริงที่เคยทำ</p>
       </div>
       <div class="grid">
-        <div class="card reveal">
-          <div class="thumb">Portfolio</div>
+        <div class="card">
+          <div class="thumb">Screenshot</div>
           <div class="content">
-            <h4>Personal Portfolio (This site)</h4>
-            <p class="desc">HTML/CSS/JS only. Focus on semantic markup, responsive layout, nav accessibility, and performance basics. (Add Lighthouse score later.)</p>
-            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+            <h3 class="h3">Portfolio Website</h3>
+            <p>เว็บไซต์เรซูเม่ส่วนตัวที่ออกแบบให้ responsive และ bilingual</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
           </div>
-          <div class="actions"><a class="btn ghost" href="#" title="Same page">Live</a></div>
+          <div class="actions">
+            <a href="https://..." target="_blank" class="btn ghost">Live</a>
+            <a href="https://github.com/..." target="_blank" class="btn">Code</a>
+          </div>
         </div>
+        <!-- เพิ่มการ์ด -->
       </div>
     </div>
   </section>
+  
+  
 
   <!-- CREATIVE -->
   <section id="creative" class="projects">
@@ -321,19 +364,23 @@
     </div>
   </section>
 
+  <section id="contact">
+    <div class="container">
+      <div class="head">
+        <p class="desc">พร้อมร่วมงาน และเปิดรับโอกาสใหม่ ๆ</p>
+      </div>
+      <p>📧 aphinan.npchr@gmail.com | 📞 062-605-9936</p>
+         <a href="https://github.com/aphinan014/https-aphinan.github.io-portfolio-" target="_blank">GitHub</a></p>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
-    <div class="container">© <span id="year"></span> Aphinan Ngamphoncharoen</div>
+    <div class="container">
+      <p>© <span id="year"></span> Aphinan Ngampolcharoen</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
